@@ -10,6 +10,7 @@ export default function HomepageText() {
                 src={logo}
                 alt="logo"
             />
+            <hr className="homepageText__line"/>
             <h4 className="homepageText__motto">
                 Where drinks are served in style, with love.
             </h4>

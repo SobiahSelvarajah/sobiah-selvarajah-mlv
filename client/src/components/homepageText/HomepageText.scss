@@ -4,7 +4,25 @@
 @use '../../partials/typeface' as *;
 
 .homepageText {
+    &__container {
+        padding: 30px 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $chocolate_cosmos;
+        color: $tan;
+    }
     &__logo {
         height: 100px;
+        padding-bottom: 30px;
+    }
+    &__line {
+        width: 40%;
+    }
+    &__motto {
+        padding-top: 0px;
+        text-align: center;
     }
 }

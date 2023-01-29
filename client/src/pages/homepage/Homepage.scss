@@ -2,3 +2,14 @@
 @use '../../partials/colors' as *;
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
+
+.homepage {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+
+        }
+    }
+}

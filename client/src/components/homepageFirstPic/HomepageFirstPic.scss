@@ -5,6 +5,9 @@
 
 .homepageFirstPic {
     &__image {
-        height: 100vh;
+        height: 50%;
+        @include tablet {
+            height: 100vh;
+        }
     }
 }
