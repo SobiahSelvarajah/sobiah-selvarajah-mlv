@@ -1,0 +1,19 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.homepageButton {
+    &__container {
+        margin: 50px 0 20px 0;
+    }
+    &__button {
+        background-color: $tan;
+        color: $chocolate_cosmos;
+        border: 0px;
+        border-radius: 20px;
+        padding: 15px;
+        font-family: 'Raleway SemiBold';
+        font-size: $h4_text_size_m;
+    }
+}

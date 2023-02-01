@@ -6,10 +6,9 @@
 .homepage {
     &__container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         @include tablet {
             flex-direction: row;
-
         }
     }
 }
