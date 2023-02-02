@@ -3,6 +3,15 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-// .navlist {
-
-// }
+.navlist {
+    &__container {
+        display: flex;
+        color: $chocolate_cosmos;
+        cursor: pointer;
+        list-style: none;
+    }
+    &__container,
+    &__links {
+        margin: 0 15px;
+    }
+}

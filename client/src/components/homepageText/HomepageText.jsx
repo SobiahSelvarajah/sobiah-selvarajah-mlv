@@ -1,11 +1,13 @@
 import React from "react";
 import logo from "../../assets/mlv-logo-files/resizable-vector-files/original.svg";
 import HomepageButton from "../homepageButton/HomepageButton";
+import Navbar from "../navbar/Navbar";
 import "./HomepageText.scss";
 
 export default function HomepageText() {
     return(
         <section className="homepageText__container">
+            <Navbar />
             <img 
                 className="homepageText__logo"
                 src={logo}

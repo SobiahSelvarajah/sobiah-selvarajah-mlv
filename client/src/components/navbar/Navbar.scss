@@ -1,0 +1,26 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.navbar {
+    &__wrapper {
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    &__container {
+        width: 100%;
+        height: 80px;
+        margin: 0 15px;
+        padding: 30px;        
+        background-color: $tan;
+        color: $chocolate_cosmos;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Raleway SemiBold';
+        font-size: $h3_text_size_m;
+    }
+}
