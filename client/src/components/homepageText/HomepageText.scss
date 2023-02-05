@@ -4,7 +4,8 @@
 @use '../../partials/typeface' as *;
 
 .homepageText {
-    &__container {
+    // &__container,
+    &__wrapper {
         padding: 60px 0 40px 0;
         width: 100vw;
         display: flex;

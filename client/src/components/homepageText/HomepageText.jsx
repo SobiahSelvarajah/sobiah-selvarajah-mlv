@@ -8,16 +8,18 @@ export default function HomepageText() {
     return(
         <section className="homepageText__container">
             <Navbar />
-            <img 
-                className="homepageText__logo"
-                src={logo}
-                alt="logo"
-            />
-            <hr className="homepageText__line"/>
-            <h4 className="homepageText__motto">
-                Where drinks are served in style, with love.
-            </h4>
-            <HomepageButton />
+            <div className="homepageText__wrapper">
+                <img 
+                    className="homepageText__logo"
+                    src={logo}
+                    alt="logo"
+                />
+                <hr className="homepageText__line"/>
+                <h4 className="homepageText__motto">
+                    Where drinks are served in style, with love.
+                </h4>
+                <HomepageButton />
+            </div>
         </section>
     )
 }

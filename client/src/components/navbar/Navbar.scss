@@ -13,14 +13,42 @@
     &__container {
         width: 100%;
         height: 80px;
-        margin: 0 15px;
-        padding: 30px;        
-        background-color: $tan;
-        color: $chocolate_cosmos;
+        margin: 0;
+        // padding: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-family: 'Raleway SemiBold';
         font-size: $h3_text_size_m;
+        position: relative;
+    }
+    &__container,
+    &__expanded {
+        transition: 0.5s height ease-in-out;       
+        background-color: $tan;
+        color: $chocolate_cosmos;
+    }
+    &__expanded {
+        height: 80vh;
+    }
+    &__container,
+    &__toggle {
+        color: $chocolate_cosmos;
+    }
+    &__logo {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+    }
+    &__toggle {
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 20px;
+    }
+}
+.navlist {
+    &__container {
+        display: none;
     }
 }
