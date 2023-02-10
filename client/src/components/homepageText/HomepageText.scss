@@ -4,16 +4,31 @@
 @use '../../partials/typeface' as *;
 
 .homepageText {
-    // &__container,
     &__wrapper {
+        background-color: $chocolate_cosmos;
+        display: flex;
+        flex-direction: column;
+    }
+    &__nav {
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: $tan;
+        color: $chocolate_cosmos;
+        font-family: 'Raleway SemiBold';
+        font-size: $h3_text_size_m;
+    }
+    &__content {
         padding: 60px 0 40px 0;
-        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $chocolate_cosmos;
         color: $tan;
+        @include tablet {
+            padding: 0 80px;
+        }
     }
     &__logo {
         height: 100px;

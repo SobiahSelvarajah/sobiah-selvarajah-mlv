@@ -1,12 +1,12 @@
 import React from "react";
-import coffees from "../../assets/images/triple-coffee.jpg";
+import coffee from "../../assets/images/coffee-heart.jpg";
 import "./HomepageFirstPic.scss";
 
 export default function HomepageFirstPic() {
     return(
         <img
             className="homepageFirstPic__image"
-            src={coffees}
+            src={coffee}
             alt="coffees"
         />
     )

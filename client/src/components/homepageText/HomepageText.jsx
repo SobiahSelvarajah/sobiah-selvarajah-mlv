@@ -6,9 +6,11 @@ import "./HomepageText.scss";
 
 export default function HomepageText() {
     return(
-        <section className="homepageText__container">
-            <Navbar />
-            <div className="homepageText__wrapper">
+        <div className="homepageText__wrapper">
+            <header className="homepageText__nav">
+                <Navbar />
+            </header>
+            <section className="homepageText__content">
                 <img 
                     className="homepageText__logo"
                     src={logo}
@@ -18,8 +20,8 @@ export default function HomepageText() {
                 <h4 className="homepageText__motto">
                     Where drinks are served in style, with love.
                 </h4>
-                <HomepageButton />
-            </div>
-        </section>
+                <HomepageButton />                
+            </section>
+        </div>
     )
 }
