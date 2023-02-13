@@ -1,3 +1,8 @@
+@use './partials/breakpoints' as *;
+@use './partials/textstyles' as *;
+@use './partials/typeface' as *;
+
+// -- Base Style -- //
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +14,64 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: $h1_text_size_m;
+  line-height: $h1_line_height_m;
+  @include tablet {
+    font-size: $h1_text_size_dt;
+    line-height: $h1_line_height_dt;
   }
+}
+
+h2 {
+  font-size: $h2_text_size_m;
+  line-height: $h2_line_height_m;
+  @include tablet {
+    font-size: $h2_text_size_dt;
+    line-height: $h2_line_height_dt;
+  }
+}
+
+h3 {
+  font-size: $h3_text_size_m;
+  line-height: $h3_line_height_m;
+  @include tablet {
+    font-size: $h3_text_size_dt;
+    line-height: $h3_line_height_dt;
+  }
+}
+
+h4 {
+  font-size: $h4_text_size_m;
+  line-height: $h4_line_height_m;
+  @include tablet {
+    font-size: $h4_text_size_dt;
+    line-height: $h4_line_height_dt;
+  }
+  
+}
+h5 {
+  font-size: $h5_text_size_m;
+  line-height: $h5_line_height_m;
+  @include tablet {
+    font-size: $h5_text_size_dt;
+    line-height: $h5_line_height_dt;
+  }
+}
